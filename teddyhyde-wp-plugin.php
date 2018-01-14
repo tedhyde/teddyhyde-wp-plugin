@@ -48,10 +48,10 @@ $popup = <<<EOD
 
 EOD;
 
-$url = get_site_url()
-$hostname = substr( $url, strlen( "http://" ));
+$url = get_site_url();
+$hostname = substr( $url, strlen( "http://" )+1);
 
-$iframe = <<<'EOD'
+$iframe = <<<EOD
 
 <iframe height="150px" width="100%" frameborder="0" id="th" src="https://tx.teddyhyde.com/contribution/{$hostname}"></iframe>
 
