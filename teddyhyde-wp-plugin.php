@@ -1,7 +1,7 @@
 <?php
   /**
      * @package Teddy_Hyde_Wordpress
-     * @version 0.0.3
+     * @version 0.0.6
    */
 
   /**
@@ -9,7 +9,7 @@
    Plugin URI: https://github.com/tedhyde/teddyhyde-wordpress-plugin
    Description: Teddy Hyde for Wordpress
    Author: Chris Dawson
-   Version: 0.0.3
+   Version: 0.0.6
    Author URI: http://www.teddyhyde.com
    Text Domain: teddy-hyde-wordpress
    */
