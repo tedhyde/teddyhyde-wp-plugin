@@ -10,7 +10,7 @@ Head over to the releases section, download the latest release as a ZIP, and the
 
 DigitalOcean has a dead simple way to create a Wordpress server. Follow these instructions to do a complete installation in under ten minutes.
 
-[Watch the full setup on YouTube](https://youtube.com)
+[Watch the full setup on YouTube](https://youtu.be/0LNZajf3fr0)
 
 **Steps**
 1. Register your domain through any registrar.
