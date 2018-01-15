@@ -14,7 +14,7 @@ The simplest and most secure way to accept Ethereum contributions on your WordPr
 3. **No credit card** is required.
 3. **Transactions are peer-to-peer**: the reader is generating a payment transaction from your website and that transaction can be processed entirely by you (but Teddy Hyde will do it for free if you prefer). Transactions are logged so you can see your success rates.
 
-**Why is Teddy Hyde is better than other solutions?**
+**Why is Teddy Hyde better/safer/simpler than other solutions?**
 
 * **Patreon**: your content is hosted on your site so you don't have to expend energy building Patreon's brand (and worry they will change their policies and kick you off the landing page you've built).
 * **Tipping services**: users cannot access the content until they pay or you permit them access after watching an ad.
