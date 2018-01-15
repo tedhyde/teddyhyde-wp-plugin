@@ -9,7 +9,7 @@ The simplest and most secure way to accept Ethereum contributions on your WordPr
     2. Configure your site on https://admin.teddyhyde.com
 3. **Readers pay immediately** on your site for access to content (no special browser or plugins required and works on any mobile browser) or (only if you permit it) they can choose to watch an advertisement in lieu of payment. 
 3. **Readers never leave your site**
-3. **Setup is a one-time transaction** that happens immediately and takes 15 seconds.
+3. **Setup (for your readers) is a one-time transaction** that happens immediately and takes 15 seconds.
 3. **Contributions can come from anywhere in the world** (readers only need Internet access).
 3. **No credit card** is required.
 3. **Transactions are peer-to-peer**: the reader is generating a payment transaction from your website and that transaction can be processed entirely by you (but Teddy Hyde will do it for free if you prefer). Transactions are logged so you can see your success rates.
