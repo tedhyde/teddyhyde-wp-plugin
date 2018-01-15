@@ -54,6 +54,7 @@ DigitalOcean has a dead simple way to create a Wordpress server. Follow these in
    1. Go to plugins and "Add New" and then "Upload Plugin". Then, "Activate" the "Teddy Hyde Wordpress" plugin.
 1. On https://admin.teddyhyde.com login and register your new blog 
    1. Make sure to enter in your Ethereum public address into which you want micro-donations to be received.
+       1. Don't have an Ethereum address? Go to coinbase and get one: https://www.coinbase.com/join/5137dfce1bd353af550000b4
    1. Choose the amount and currency you prefer (USD or Ethereum)
 1. Back on your WordPress server...
    1. Add a new post.
