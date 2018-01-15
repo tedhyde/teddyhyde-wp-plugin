@@ -22,7 +22,9 @@ The simplest and most secure way to accept Ethereum contributions on your WordPr
 
 ## Quick Start
 
-Head over to the releases section, download the latest release as a ZIP, and then upload into your Wordpress plugins.
+Head over to the releases section, download the latest release as a ZIP, and then upload into your Wordpress plugins. 
+
+**NB**: Your WordPress server must be on HTTPS (SSL) so if you don't have this established, read below on how to setup easily with certbot from "Let's Encrypt".
 
 ## Detailed Instructions (DigitalOcean)
 
