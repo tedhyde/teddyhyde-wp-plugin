@@ -83,12 +83,12 @@ add_action('wp_enqueue_scripts', 'th_assets_setup');
 function th_assets_setup() {
     wp_register_style( 'teddyhyde_css', 'https://cdn.teddyhyde.com/0.0.1/teddyhyde-reveal-jekyll.css' );
     wp_enqueue_style( 'teddyhyde_css' );
-    wp_register_style( 'th_local_css', 'https://poetry.teddyhyde.io/teddyhyde.css' );
     wp_enqueue_style( 'th_local_css' );
     wp_enqueue_script( 'teddyhyde_js', 'https://cdn.teddyhyde.com/0.0.1/teddyhyde-client-0.0.1.js');
     wp_enqueue_script( 'teddyhyde_jquery', 'https://code.jquery.com/jquery-1.8.2.min.js' );
     wp_enqueue_script( 'teddyhyde_jquery_popup', 'https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js' );
-    wp_enqueue_script( 'teddyhyde_popup', 'https://poetry.teddyhyde.io/blog.js' );
+    wp_enqueue_script( 'teddyhyde_user_js', 'https://cdn.teddyhyde.com/0.0.1/teddyhyde-user.js' );
+    wp_enqueue_style( 'teddyhyde_user_css', 'https://cdn.teddyhyde.com/0.0.1/teddyhyde-user.css' );
 }
 
 ?>
