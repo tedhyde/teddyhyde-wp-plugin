@@ -4,7 +4,7 @@ The simplest and most secure way to accept Ethereum contributions on your WordPr
 
 ## Features and Benefits
 
-1. **Setup is easy**: 
+1. **Setup is easy** (less than seven minutes from zero to full Wordpress install, see below) 
     1. Add the plugin to WordPress.
     2. Configure your site on https://admin.teddyhyde.com
 3. **Readers pay immediately** on your site for access to content (no special browser or plugins required and works on any mobile browser) or (only if you permit it) they can choose to watch an advertisement in lieu of payment. 
