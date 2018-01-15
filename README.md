@@ -1,6 +1,19 @@
 # Teddy Hyde Wordpress Plugin
 
-Easily enable acceptance of micro-contributions in Ethereum on your blog.
+The simplest and most secure way to accept Ethereum contributions on your WordPress blog. 
+
+1. Add the plugin to WordPress.
+2. Configure your site on https://admin.teddyhyde.com
+3. When a user comes to your site, they can pay immediately (no special browser or plugins required and works on any mobile browser) or (only if you permit it) they can choose to watch an advertisement in lieu of payment. They never leave your site, and setup is a one-time transaction that happens immediately.
+3. Contributions can come from anywhere in the world.
+3. No credit card is required.
+3. Transactions happen Peer-to-Peer: the reader is generating a payment transaction from your website and that transaction can be processed entirely by you (but Teddy Hyde will do it for free if you prefer). Transactions are logged so you can see your success rates.
+
+Reasons why Teddy Hyde is better than other solutions:
+
+* *Patreon*: your content is hosted on your site so you don't have to expend energy building Patreon's brand (and worry they will change their policies and kick you off the landing page you've built).
+* *Tipping services*: users cannot access the content until they pay or you permit them access after watching an ad.
+* *Stripe*: no account approval process is required, no credit card information changes hands, no PCI compliance is required.
 
 ## Quick Start
 
