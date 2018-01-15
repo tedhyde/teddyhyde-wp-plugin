@@ -4,20 +4,21 @@ The simplest and most secure way to accept Ethereum contributions on your WordPr
 
 ## Features and Benefits
 
-1. Add the plugin to WordPress.
-2. Configure your site on https://admin.teddyhyde.com
-3. When a user comes to your site, they can pay immediately (no special browser or plugins required and works on any mobile browser) or (only if you permit it) they can choose to watch an advertisement in lieu of payment. 
-3. Readers never leave your site
-3. Setup is a one-time transaction that happens immediately.
-3. Contributions can come from anywhere in the world (readers only need Internet access).
-3. No credit card is required.
-3. Transactions happen Peer-to-Peer: the reader is generating a payment transaction from your website and that transaction can be processed entirely by you (but Teddy Hyde will do it for free if you prefer). Transactions are logged so you can see your success rates.
+1. **Setup is easy**: 
+    1. Add the plugin to WordPress.
+    2. Configure your site on https://admin.teddyhyde.com
+3. **Readers pay immediately** on your site for access to content (no special browser or plugins required and works on any mobile browser) or (only if you permit it) they can choose to watch an advertisement in lieu of payment. 
+3. **Readers never leave your site**
+3. **Setup is a one-time transaction** that happens immediately and takes 15 seconds.
+3. **Contributions can come from anywhere in the world** (readers only need Internet access).
+3. **No credit card** is required.
+3. **Transactions are peer-to-peer**: the reader is generating a payment transaction from your website and that transaction can be processed entirely by you (but Teddy Hyde will do it for free if you prefer). Transactions are logged so you can see your success rates.
 
-*Why is Teddy Hyde is better than other solutions?*
+**Why is Teddy Hyde is better than other solutions?**
 
-* *Patreon*: your content is hosted on your site so you don't have to expend energy building Patreon's brand (and worry they will change their policies and kick you off the landing page you've built).
-* *Tipping services*: users cannot access the content until they pay or you permit them access after watching an ad.
-* *Stripe*: no account approval process is required, no credit card information changes hands, no PCI compliance is required.
+* **Patreon**: your content is hosted on your site so you don't have to expend energy building Patreon's brand (and worry they will change their policies and kick you off the landing page you've built).
+* **Tipping services**: users cannot access the content until they pay or you permit them access after watching an ad.
+* **Stripe**: no account approval process is required, no credit card information changes hands, no PCI compliance is required.
 
 ## Quick Start
 
