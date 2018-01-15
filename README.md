@@ -36,7 +36,7 @@ DigitalOcean has a dead simple way to create a Wordpress server. Follow these in
    1. Make sure to enter in your Ethereum public address into which you want micro-donations to be received.
    1. Choose the amount and currency you prefer (USD or Ethereum)
 1. Back on your WordPress server...
-   1.Add a new post.
+   1. Add a new post.
    1. Watch as access to the post is gated by making a micro-donation or watching a blog owner controlled advertisement.
   
 
