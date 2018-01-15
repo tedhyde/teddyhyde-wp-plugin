@@ -1,7 +1,7 @@
 <?php
   /**
      * @package Teddy_Hyde_Wordpress
-     * @version 0.0.3
+     * @version 0.0.6
    */
 
   /**
@@ -9,7 +9,7 @@
    Plugin URI: https://github.com/tedhyde/teddyhyde-wordpress-plugin
    Description: Teddy Hyde for Wordpress
    Author: Chris Dawson
-   Version: 0.0.3
+   Version: 0.0.6
    Author URI: http://www.teddyhyde.com
    Text Domain: teddy-hyde-wordpress
    */
@@ -90,5 +90,51 @@ function th_assets_setup() {
     wp_enqueue_script( 'teddyhyde_user_js', 'https://cdn.teddyhyde.com/0.0.1/teddyhyde-user.js' );
     wp_enqueue_style( 'teddyhyde_user_css', 'https://cdn.teddyhyde.com/0.0.1/teddyhyde-user.css' );
 }
+
+/*
+// create custom plugin settings menu
+add_action('admin_menu', 'teddy_hyde_plugin_create_menu');
+
+
+function teddy_hyde_plugin_create_menu() {
+	 //create new top-level menu
+ 	  add_menu_page('Teddy Hyde Settings', 'Teddy Hyde Settings', 'administrator', __FILE__, 'teddy_hyde_plugin_settings_page' , plugins_url('/images/icon.png', __FILE__) );
+
+	  //call register settings function
+ 	 add_action( 'admin_init', 'register_teddy_hyde_plugin_settings' );
+}
+
+
+function register_teddy_hyde_plugin_settings() {
+	  //register our settings
+	  register_setting( 'teddy-hyde-plugin-settings-group', 'advertisement' );
+	  register_setting( 'teddy-hyde-plugin-settings-group', 'thanks' );
+}
+
+function teddy_hyde_plugin_settings_page() {
+?>
+<div class="wrap">
+<h1>Teddy Hyde Settings</h1>
+
+<form method="post" action="options.php">
+<?php settings_fields( 'teddy-hyde-plugin-settings-group' ); ?>
+<?php do_settings_sections( 'teddy-hyde-plugin-settings-group' ); ?>
+<table class="form-table">
+<tr valign="top">
+<th scope="row">Advertisement</th>
+<td><textarea width="100%" rows="5" name="advertisement" value="<?php echo esc_attr( get_option('advertisement') ); ?>"></textarea></td>
+</tr>
+
+<tr valign="top">
+<th scope="row">Thank You</th>
+<td><textarea type="text" name="thanks" value="<?php echo esc_attr( get_option('thanks') ); ?>"></textarea></td>
+</tr>
+</table>
+
+<?php submit_button(); ?>
+
+</form>
+</div>
+*/
 
 ?>
