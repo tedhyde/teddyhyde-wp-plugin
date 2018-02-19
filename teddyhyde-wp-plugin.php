@@ -1,7 +1,7 @@
 <?php
   /**
      * @package Teddy_Hyde_Wordpress
-     * @version 0.0.8
+     * @version 0.0.9
    */
 
   /**
@@ -9,7 +9,7 @@
    Plugin URI: https://github.com/tedhyde/teddyhyde-wordpress-plugin
    Description: Teddy Hyde for Wordpress
    Author: Chris Dawson
-   Version: 0.0.8
+   Version: 0.0.9
    Author URI: http://www.teddyhyde.com
    Text Domain: teddy-hyde-wordpress
    */
@@ -59,7 +59,7 @@ EOD;
     $hostname = substr( $url, strlen( "http://" ));
   }
   else {
-    $hostname = substr( $url, strlen( "https://" ));
+    $hostname = substr( $url, strlen( "https://" )+1);
   }
 
 $iframe = <<<EOD
@@ -119,30 +119,35 @@ function teddyhyde_configuration_add_page() {
 function teddyhyde_configuration_do_page() {
 ?>
 
+	      
 <div class="wrap">
-  <h2>Ozh's Sample Options</h2>
+  <h2>TeddyHyde Configuration</h2>
   <form method="post" action="options.php">
     <?php settings_fields('teddyhyde_configuration_options'); ?>
     <?php $options = get_option('teddyhyde_configuration'); ?>
-
-    <script>
-      console.log( "<?php echo htmlspecialchars( $options['popup'] ? $options['popup'] : $popup ); ?>" );
-    </script>
+    <?php global $popup, $iframe ?>
     
     <table class="form-table">
       <tr valign="top">
 	<th scope="row">Advertising-ish popup when payment is declined</th>
 	<td>
-	  <textarea cols="50" rows="6" name="teddyhyde_configuration[popup]">
-            <?php echo htmlspecialchars( $options['popup'] ? $options['popup'] : $popup ); ?>
+	  <h4>
+	    This is the text displayed to your user when payment is declined. They receive an advertisement from you.
+	  </h4>
+	    
+	  <textarea width="100%" cols="80" rows="15" name="teddyhyde_configuration[popup]"><?php echo htmlspecialchars( $options['popup'] ?: $popup ); ?>
 	  </textarea>
 	</td>
       </tr>
       <tr valign="top">
 	<th scope="row">iFrame configuration</th>
 	<td>
-	  <textarea cols="50" rows="6" name="teddyhyde_configuration[iframe]">
-	    <?php echo htmlspecialchars( $options['popup'] ? $options['iframe'] : $iframe ); ?>
+	  <h4>
+	    This configures the iFrame embedded in your site. You can control colors, size, etc. Please make sure
+	    you specify the correct hostname in the reference (e.g.: https://tx.teddyhyde.com/contribution/mysite.com).
+	  </h4>
+	  
+	  <textarea width="100%" cols="80" rows="15" name="teddyhyde_configuration[iframe]"><?php echo htmlspecialchars( $options['iframe'] ?: $iframe ); ?>
 	  </textarea>
 	</td>
       </tr>
