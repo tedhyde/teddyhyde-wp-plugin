@@ -1,7 +1,7 @@
 <?php
   /**
      * @package Teddy_Hyde_Wordpress
-     * @version 0.1.1
+     * @version 0.1.2
    */
 
   /**
@@ -9,7 +9,7 @@
    Plugin URI: https://github.com/tedhyde/teddyhyde-wordpress-plugin
    Description: Teddy Hyde for Wordpress
    Author: Chris Dawson
-   Version: 0.1.1
+   Version: 0.1.2
    Author URI: http://www.teddyhyde.com
    Text Domain: teddy-hyde-wordpress
    */
@@ -82,10 +82,13 @@ EOD;
 
 function add_gated_excerpt( $content ) {
   global $popup, $iframe;
+  $options = get_option('teddyhyde_configuration');
+  $popup_final = $options['popup'] ?: $popup;
+  $iframe_final = $options['iframe'] ?: $iframe;
   $lines = explode("\n", $content);
   $excerpt = '<div id="excerpt">' . $lines[1] . '</div>';
   $full = '<div id="full">' . $content . '</div>';
-  return ( $excerpt . $full . $iframe . $popup  );
+  return ( $excerpt . $full . $iframe_final . $popup_final  );
 } 
 
 add_filter( 'the_content', 'add_gated_excerpt' );
@@ -107,12 +110,12 @@ add_action('admin_menu', 'teddyhyde_configuration_add_page');
 
 // Init plugin options to white list our options
 function teddyhyde_configuration_init(){
-	register_setting( 'teddyhyde_configuration_options', 'teddyhyde_configuration', 'teddyhyde_configuration_validate' );
+  register_setting( 'teddyhyde_configuration_options', 'teddyhyde_configuration', 'teddyhyde_configuration_validate' );
 }
 
 // Add menu page
 function teddyhyde_configuration_add_page() {
-	add_options_page('TeddyHyde iFrame Options', 'TeddyHyde Options', 'manage_options', 'teddyhyde_configuration', 'teddyhyde_configuration_do_page');
+  add_options_page('TeddyHyde iFrame Options', 'TeddyHyde Options', 'manage_options', 'teddyhyde_configuration', 'teddyhyde_configuration_do_page');
 }
 
 // Draw the menu page itself
